@@ -20,13 +20,12 @@ function checkTime(i) {
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
   return i;
 }
-</script>
-    <p>Date/Time: <span id="datetime"></span></p>
+              <div class="col">
+                    <label for="date">Date</label>
+                    <input type="date" onload="getDate()" class="form-control" id="date" 
+                      name="date">
+                </div>
 
-<script>
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
-</script>
 </head>
 
 <body onload="startTime()">
