@@ -4,6 +4,23 @@
   </head>
   <body>
     <h1> The Ninja Times </h1>
+    <script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
     <br>
     <p> The Ninja Times is officially open!! </p>
     <br>
@@ -12,7 +29,7 @@
     <h1> Welcome to the Ninja Times </h1>
     <br>
     <br>
-    <h3> Today 12/11/19 we will be discussing spy tactics! </h3>
+    <h3> Today 12/12/19 we will be discussing spy tactics! </h3>
     <br>
     <h3> Tactic 1 </h3>
     <p> First get a fake identity and maybe a partner </p>
@@ -25,6 +42,8 @@
     </ol>
     <h3> Tactic 2 </h3>
     <p> Second remain stealthy </p>
+    <ol>
+      <li> Hide behind things </li>
     
   </body>
 </html>
