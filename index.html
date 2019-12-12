@@ -4,7 +4,7 @@
   </head>
   <body>
     <h1> The Ninja Times </h1>
-    <script>
+ <script>
 function startTime() {
   var today = new Date();
   var h = today.getHours();
@@ -21,6 +21,11 @@ function checkTime(i) {
   return i;
 }
 </script>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt"></div>
     <br>
     <p> The Ninja Times is officially open!! </p>
     <br>
