@@ -1,2 +1,2 @@
-# TheNinjaTimes.github.io
+# Awespboop.github.io
 Cool
