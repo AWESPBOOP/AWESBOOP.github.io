@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <form>
-    <input name="username" id="username" type="text">
-    <input name="pass" id="pass" type="password">
-    <input type="button" value="Submit" onclick="myFunction()">
-  </form> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Mass and weight</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1> Mass and Weight whats the difference? </h1>
+<h3> Mass </h3>
+<p> Mass is the amount of matter in an object. Mass can be measured with a triple beam balance scale.</p>
+<h3> Weight </h3> 
+<p> Weight is the force of gravity acting on an object. Weight can be measured with a spring scale. </p>
+<h2> An example </h2> 
+<p> If your on the moon your mass stays the same however you would get lighter. This is because mass always stays the same, but gravity can change.</p>
+<h3> Units of measurement </h3> 
+<ul>
+<li> Weight: newtons </li>
+<li> Mass: Grams </li>
+<li> Volume: Ml </li>
+<li> Density: Grams per cm or mil </li>
+</ul>
+<marquee behavior=”alternate” direction=”up” width=”80%”><marquee direction=”right”>Density</marquee></marquee>
 
-
-  <script>
-    function myFunction(){
-      var user = document.getElementById("username").value;
-      var pass = document.getElementById("pass").value;
-
-      if(user == "Admin768" && pass == "Explodingsheepnet"){
-        window.location.href="win.html";
-        alert("correct");
-      }else{
-        alert("Incorrect username or password");
-      }
-    }
-  </script>
+  <script src="script.js"></script>
+</body>
 </html>
